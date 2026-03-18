@@ -1,0 +1,4 @@
+(executable
+ (public_name tapl)
+ (name main)
+ (libraries tapl tapl.untyped))
