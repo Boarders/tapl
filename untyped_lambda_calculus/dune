@@ -1,0 +1,11 @@
+(library
+ (name untyped)
+ (public_name tapl.untyped)
+ (libraries qcheck)
+ (preprocess (pps ppx_deriving.show ppx_deriving.map)))
+
+(menhir
+ (modules parser))
+
+(ocamllex
+ (modules lexer))
